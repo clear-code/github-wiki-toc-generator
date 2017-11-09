@@ -5,7 +5,6 @@
   "author": "ClearCode Inc.",
   "description": "Generates ToC for GitHub wiki pages.",
   "permissions": [
-    "clipboardWrite",
     "tabs",
     "https://github.com/*/wiki/*/_edit*"
   ],
