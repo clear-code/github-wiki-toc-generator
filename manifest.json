@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Table of Contents Generator for GitHub Wiki",
+  "version": "1.0.0",
+  "author": "YUKI \"Piro\" Hiroshi",
+  "description": "Generates ToC for GitHub wiki pages.",
+  "permissions": [
+    "clipboardWrite",
+    "tabs",
+    "https://github.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Generate ToC from GitHub wiki page"
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "description": "Generate ToC from GitHub wiki page"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "github-wiki-toc-generator@piro.sakura.ne.jp",
+      "strict_min_version": "52.0"
+    }
+  }
+}
