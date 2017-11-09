@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Table of Contents Generator for GitHub Wiki",
-  "version": "1.0.0",
-  "author": "YUKI \"Piro\" Hiroshi",
+  "version": "1.0.1",
+  "author": "ClearCode Inc.",
   "description": "Generates ToC for GitHub wiki pages.",
   "permissions": [
     "clipboardWrite",
