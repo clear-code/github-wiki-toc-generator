@@ -7,7 +7,7 @@
   "permissions": [
     "clipboardWrite",
     "tabs",
-    "https://github.com/*"
+    "https://github.com/*/wiki/*/_edit*"
   ],
   "background": {
     "scripts": [
