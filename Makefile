@@ -21,5 +21,5 @@ format:
 
 xpi: lint
 	rm -f ./*.xpi
-	zip -r -0 github-wiki-toc-generator.xpi manifest.json background.js >/dev/null 2>/dev/null
+	zip -r -9 github-wiki-toc-generator.xpi manifest.json background.js >/dev/null 2>/dev/null
 
