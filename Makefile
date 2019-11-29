@@ -9,7 +9,7 @@ install_dependency:
 	npm install
 
 install_hook:
-	echo -e '#!/bin/sh\nmake lint' > "$(CURDIR)/.git/hooks/pre-commit" && chmod +x "$(CURDIR)/.git/hooks/pre-commit"
+	echo '#!/bin/sh\nmake lint' > "$(CURDIR)/.git/hooks/pre-commit" && chmod +x "$(CURDIR)/.git/hooks/pre-commit"
 
 lint:
 	"$(NPM_BIN_DIR)/eslint" . --ext=.js --report-unused-disable-directives
