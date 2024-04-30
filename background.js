@@ -29,7 +29,9 @@ function generate() {
     }
     var toc = [];
     for (let heading of headings) {
-      let anchor = heading.querySelector('a[href]');
+      let anchor = heading.querySelector('a[href]') || heading.parentNode.querySelector('a.anchor[href]');
+      if (!anchor)
+        throw new Error(`Could not find out anchor for a heading: ${heading.textContent}`);
       let href = anchor.getAttribute('href');
       let indent = '';
       let headingLevel = parseInt(heading.localName.charAt(1));
